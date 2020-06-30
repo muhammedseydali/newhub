@@ -1,0 +1,19 @@
+from tkinter import *
+
+
+window=Tk()
+window.geometry("500x500")
+window.title=("seydali")
+window.configure(bg="blue")
+def hello():
+    print("button clicked")
+
+
+button=Button(window,text="ok",width=30, height=30, bg="red",command=hello)
+label=Label(window,text="welcome")
+
+button.pack()
+label.pack()
+
+window.mainloop()
+print("haiii")
